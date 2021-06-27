@@ -18,6 +18,8 @@
     "@angular/platform-browser": "~12.0.0",
     "@angular/platform-browser-dynamic": "~12.0.0",
     "@angular/router": "~12.0.0",
+    "@ngx-formly/bootstrap": "^5.0.0",
+    "@ngx-formly/core": "^5.0.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.1.0",
     "zone.js": "~0.11.4"
@@ -26,6 +28,7 @@
     "@angular-devkit/build-angular": "~12.0.0",
     "@angular/cli": "~12.0.0",
     "@angular/compiler-cli": "~12.0.0",
+    "@ngx-formly/schematics": "^5.10.21",
     "@types/jasmine": "~3.6.0",
     "@types/node": "^12.11.1",
     "jasmine-core": "~3.7.0",
