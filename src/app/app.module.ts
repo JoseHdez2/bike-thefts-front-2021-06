@@ -21,7 +21,7 @@ import { ToastrModule } from 'ngx-toastr';
     ReactiveFormsModule,
     FormlyModule.forRoot({ extras: { lazyRender: true } }),
     FormlyBootstrapModule,
-    ToastrModule.forRoot()
+    ToastrModule.forRoot({ closeButton: true })
   ],
   providers: [],
   bootstrap: [AppComponent]

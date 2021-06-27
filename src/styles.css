@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+/* #toast-container > div {
+    opacity:1;
+} */
+
+body {
+    background-color: cadetblue;
+}
+
+.toast-container .ngx-toastr {
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.5) !important;
+}
