@@ -1,0 +1,7 @@
+<div class="m-4">
+    <div *ngFor="let u of users">
+        <span>{{u.name}} {{u.surnames}}</span>
+        <button (click)="onDelete(u.id)">❌</button>
+    </div>
+    <div style="font-size: small">{{users.length}} users</div>
+</div>

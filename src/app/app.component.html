@@ -1,8 +1,7 @@
 <router-outlet>
   <div id="app-container">
-    <form [formGroup]="form" (ngSubmit)="onSubmit()">
-      <formly-form [form]="form" [fields]="fields" [model]="model"></formly-form>
-      <button type="submit" class="btn btn-default">Submit</button>
-    </form>
+    <app-users-list></app-users-list>
+    <h3 class="m-2">Create User</h3>
+    <app-users-form></app-users-form>
   </div>
 </router-outlet>

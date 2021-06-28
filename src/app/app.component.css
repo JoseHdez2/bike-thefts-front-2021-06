@@ -1,9 +1,6 @@
-body {
-    background-color: red;
-}
 
 #app-container {
-    background-color: cornsilk;
+    background-color: var(--lightest);
     width: 60%;
     min-width: 600px;
     margin: auto;

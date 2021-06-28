@@ -9,17 +9,28 @@ import { FormlyBootstrapModule } from '@ngx-formly/bootstrap';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
+import { HttpClientModule } from '@angular/common/http';
+import { UsersListComponent } from './users/users-list/users-list.component';
+import { UsersFormComponent } from './users/users-form/users-form.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    UsersListComponent,
+    UsersFormComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
+    HttpClientModule,
     ReactiveFormsModule,
-    FormlyModule.forRoot({ extras: { lazyRender: true } }),
+    FormlyModule.forRoot({ 
+      validationMessages: [{
+        name: 'required',
+        message: 'This field is required.'
+      }],
+      extras: { lazyRender: true } }),
     FormlyBootstrapModule,
     ToastrModule.forRoot({ closeButton: true })
   ],

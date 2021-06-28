@@ -3,10 +3,31 @@
     opacity:1;
 } */
 
+:root {
+    --darkest: #0D1B2A;
+    --dark: #1B263B;
+    --medium: #415A77;
+    --light: #778DA9;
+    --lightest: #E0E1DD;
+}
+
 body {
-    background-color: cadetblue;
+    background-color: var(--darkest);
+}
+
+.btn {
+    border: 1px solid var(--darkest);
 }
 
 .toast-container .ngx-toastr {
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.5) !important;
 }
+
+form > * {
+    margin: 5px auto;
+}
+
+.m-2 { margin: 0.5rem; }
+.m-4 { margin: 1rem; }
+.display-flex { display: flex; }
+.flex-auto { flex: auto; }
