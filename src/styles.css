@@ -12,7 +12,7 @@
 }
 
 body {
-    background-color: var(--darkest);
+    background-color: #f6f6f6 /*var(--darkest); */
 }
 
 .btn {
@@ -31,3 +31,6 @@ form > * {
 .m-4 { margin: 1rem; }
 .display-flex { display: flex; }
 .flex-auto { flex: auto; }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

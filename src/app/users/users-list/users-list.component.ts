@@ -22,6 +22,15 @@ export class UsersListComponent implements OnInit {
     });
   }
 
+  onEdit(id?: number): void {
+    if(!id) {
+      console.error('User has no id.');
+    }
+    this.usersService.deleteUser(id!).subscribe(data => {
+      this.toastr.success(`Deleted user ${id}.`, 'Success');
+    });
+  }
+
   onDelete(id?: number): void {
     if(!id) {
       console.error('User has no id.');
