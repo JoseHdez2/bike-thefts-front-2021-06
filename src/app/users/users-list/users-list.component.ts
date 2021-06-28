@@ -23,12 +23,7 @@ export class UsersListComponent implements OnInit {
   }
 
   onEdit(id?: number): void {
-    if(!id) {
-      console.error('User has no id.');
-    }
-    this.usersService.deleteUser(id!).subscribe(data => {
-      this.toastr.success(`Deleted user ${id}.`, 'Success');
-    });
+    this.toastr.error(`Could not edit user ${id}.`, 'Error');
   }
 
   onDelete(id?: number): void {
@@ -37,6 +32,8 @@ export class UsersListComponent implements OnInit {
     }
     this.usersService.deleteUser(id!).subscribe(data => {
       this.toastr.success(`Deleted user ${id}.`, 'Success');
+    }, error => {
+      this.toastr.error(`Could not delete user ${id}.`, 'Error');
     });
   }
 
