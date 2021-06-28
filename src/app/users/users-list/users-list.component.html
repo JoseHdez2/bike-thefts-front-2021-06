@@ -1,6 +1,6 @@
 <div class="m-4">
-    <div *ngFor="let u of users">
-        <span>{{u.name}} {{u.surnames}}</span>
+    <div *ngFor="let u of users" class="user-list__item">
+        <span class="m-auto">{{u.name}} {{u.surnames}}</span>
         <button (click)="onEdit(u.id)">✏</button>
         <button (click)="onDelete(u.id)">❌</button>
     </div>

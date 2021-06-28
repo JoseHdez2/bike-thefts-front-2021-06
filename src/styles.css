@@ -27,6 +27,7 @@ form > * {
     margin: 5px auto;
 }
 
+.m-auto { margin: auto; }
 .m-2 { margin: 0.5rem; }
 .m-4 { margin: 1rem; }
 .display-flex { display: flex; }

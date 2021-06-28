@@ -1,0 +1,13 @@
+
+.user-list__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.user-list__count {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-size: small;
+}
