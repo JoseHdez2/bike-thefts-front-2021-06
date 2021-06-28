@@ -70,6 +70,7 @@ export class UsersFormComponent {
       return;
     }
     this.usersService.createUser(this.model).subscribe(data => {
+      this.form.reset();
       this.toastr.success('Created User', 'Success');
     })
   }
